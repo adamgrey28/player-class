@@ -2,27 +2,26 @@
 
 
 class SpriteAnimation {
-	constructor(frameSequence, 				    //array of numbers
-							rowSpriteSheet, 			    //number
-							frameWidth, 					    //number
-							frameHeight, 					    //number
-							offsetFrameX = 0, 		    //number, opt
-							offsetFrameY = 0, 		    //number, opt
-							animationTiming = 0, 	    //number, opt
-							singleAnimation = false   //boolean, opt
-							) {
-								
-		this.frameSequence = frameSequence;
-		this.rowSpriteSheet = rowSpriteSheet;
-		this.frameWidth = frameWidth;
-		this.frameHeight = frameHeight;
-		this.offsetFrameX = offsetFrameX;
-		this.offsetFrameY = offsetFrameY;
-		this.animationTiming = animationTiming;
-		this.singleAnimation = singleAnimation;
-		
-		this.lastFrameIndex = this.frameSequence.length - 1;
-	}
+  constructor(frameSequence, 				    //array of numbers
+              rowSpriteSheet, 			    //number
+              frameWidth, 					    //number
+              frameHeight, 					    //number
+              offsetFrameX = 0, 		    //number, opt
+              offsetFrameY = 0, 		    //number, opt
+              animationTiming = 0, 	    //number, opt
+              singleAnimation = false   //boolean, opt
+              ) {
+
+    this.frameSequence = frameSequence;
+    this.rowSpriteSheet = rowSpriteSheet;
+    this.frameWidth = frameWidth;
+    this.frameHeight = frameHeight;
+    this.offsetFrameX = offsetFrameX;
+    this.offsetFrameY = offsetFrameY;
+    this.animationTiming = animationTiming;
+    this.singleAnimation = singleAnimation;
+    this.lastFrameIndex = this.frameSequence.length - 1;
+  }
 }
 
 class AnimatedSprite {
@@ -158,7 +157,7 @@ class MovementSprite extends AnimatedSprite {
 
     super(...arguments);
 
-    //physix 
+    //physix
     this.velX = 0;
     this.velY = 0;
     this.jumping = false;
