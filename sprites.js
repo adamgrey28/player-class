@@ -2,13 +2,13 @@
 
 
 class SpriteAnimation {
-  constructor(frameSequence, 				    //array of numbers
-              rowSpriteSheet, 			    //number
-              frameWidth, 					    //number
-              frameHeight, 					    //number
-              offsetFrameX = 0, 		    //number, opt
-              offsetFrameY = 0, 		    //number, opt
-              animationTiming = 0, 	    //number, opt
+  constructor(frameSequence,            //array of numbers
+              rowSpriteSheet,           //number
+              frameWidth,               //number
+              frameHeight,              //number
+              offsetFrameX = 0,         //number, opt
+              offsetFrameY = 0,         //number, opt
+              animationTiming = 0,      //number, opt
               singleAnimation = false   //boolean, opt
               ) {
 
