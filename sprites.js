@@ -166,7 +166,7 @@ class MovementSprite extends AnimatedSprite {
 
     //animation
     this.gazeDirection = 'right';
-	}
+  }
 
   startJump() {
     if (this.grounded && !this.jumping) { // grounded нужно для ограничения двойного прыжка
@@ -217,24 +217,24 @@ class MovementSprite extends AnimatedSprite {
     return this.jumping && !this.grounded;
   }
 
-	duck() {
-		this.loadAnimation('duck');
-		this.update();
-	}
+  duck() {
+    this.loadAnimation('duck');
+    this.update();
+  }
 
-	movementRight() {
-		this.gazeDirection = 'right';
-		if ( !this.inAir() ) {
-			this.loadAnimation('right');
-		};
-		this.offsetRight();
-		this.update();
-	}
+  movementRight() {
+    this.gazeDirection = 'right';
+    if ( !this.inAir() ) {
+      this.loadAnimation('right');
+    };
+    this.offsetRight();
+    this.update();
+  }
 
-	movementLeft() {
-		this.gazeDirection = 'left';
-		if ( !this.inAir() ) {
-			this.loadAnimation('left');
+  movementLeft() {
+    this.gazeDirection = 'left';
+    if ( !this.inAir() ) {
+      this.loadAnimation('left');
     };
     this.offsetLeft();
     this.update();
