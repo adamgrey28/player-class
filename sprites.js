@@ -158,7 +158,7 @@ class MovementSprite extends AnimatedSprite {
 
     super(...arguments);
 
-    //physix
+    //physix 
     this.velX = 0;
     this.velY = 0;
     this.jumping = false;
